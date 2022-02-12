@@ -1,0 +1,139 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+.airHeader {
+  background-color: #002a63;
+  color: white;
+}
+
+#search {
+  height: 36px;
+  font-size: 22px;
+}
+
+.search-container button {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+
+  .search-container button {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 14px;
+  }
+}
+.logo-align {
+  text-align: left;
+}
+.logo-align .logo-header {
+  width: 390px;
+  height: 102px;
+  margin-top: 60px;
+}
+
+.avatar-header {
+  width: 30px;
+  height: 30px;
+}
+
+.right-menu {
+  padding: 0px;
+  height: 45px;
+}
+.right-menu a {
+  color: white;
+  text-decoration: none;
+}
+.right-menu a:hover {
+  text-decoration: underline;
+}
+.right-menu li {
+  padding-top: 0px;
+  text-align: right;
+}
+
+.second-header-menu {
+  margin: 0px;
+  padding-top: 0px;
+}
+.second-header-menu li {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+.second-header-menu li a {
+  color: white;
+  text-decoration: none;
+}
+.second-header-menu li a:hover {
+  text-decoration: underline;
+}
+
+.line-wrap {
+  position: relative;
+}
+
+.backLineLeft {
+  background-color: #1cafe5;
+  width: 100vw;
+  height: 8px;
+  position: absolute;
+  bottom: 0px;
+  right: 100%;
+  z-index: 10;
+}
+
+.backLineRight {
+  background-color: #1cafe5;
+  width: 100vw;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  z-index: 10;
+}
+
+.info-bar {
+  height: 50px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.info-bar .info-bar-container {
+  max-width: 1200px;
+}
+.info-bar ul {
+  width: 100%;
+  padding: 0;
+  list-style-type: disc;
+}
+.info-bar li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.info-bar li a {
+  color: black;
+  text-decoration: none;
+}
+.info-bar li a:hover {
+  text-decoration: underline;
+}

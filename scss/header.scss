@@ -1,0 +1,545 @@
+body {
+  margin: 0px;
+  // overflow-x: hidden;
+}
+
+.airHeader {
+  background-color: #002a63;
+  color: white;
+  overflow: hidden;
+}
+
+.search-container {
+  padding-right: 0px;
+  width: 72.4%;
+}
+
+// #search {
+//   height: 36px;
+//   font-size: 22px;
+//   width: 100%;
+// }
+
+.search-bar-area {
+  padding-right: 0px;
+  text-align: right;
+
+  .search-container button {
+    // float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search-container button:hover {
+    background: #ccc;
+  }
+
+  @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+    .search-container button {
+      float: none;
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin: 0px;
+      padding: 14px;
+    }
+  }
+
+  .search-form {
+    display: flex;
+
+    #search {
+      height: 36px;
+      font-size: 22px;
+      width: 100%;
+      background-color: #06457d;
+      border: none;
+      color: $white;
+    }
+
+    ::placeholder {
+      color: $white;
+    }
+
+    .search-icon {
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      // margin-left: 240px;
+      right: 4px;
+      margin-top: 6px;
+      cursor: pointer;
+    }
+  }
+}
+
+.logo-align {
+  text-align: left;
+
+  .logo-header {
+    width: 390px;
+    height: 102px;
+    margin-top: 60px;
+  }
+}
+
+.avatar-header {
+  width: 30px;
+  height: 30px;
+}
+
+.right-menu {
+  padding: 0px;
+  height: 45px;
+
+  ul {
+    text-align: right;
+
+    li:nth-child(3) {
+      // background-color: red;
+
+      &::before {
+        content: "";
+        // display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: hsla(0, 0%, 100%, 0.4);
+        border-radius: 4px;
+        position: absolute;
+        left: -1px;
+        top: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    li:nth-child(4) {
+      // background-color: red;
+
+      &::before {
+        content: "";
+        // display: inline-block;
+        width: 4px;
+        height: 4px;
+        background-color: hsla(0, 0%, 100%, 0.4);
+        border-radius: 4px;
+        position: absolute;
+        left: -1px;
+        top: 12px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    li {
+      padding-top: 0px;
+      padding-right: 0px;
+      // padding-right: 0px;
+      // padding-left: 0px;
+      text-align: right;
+
+      // .dot {
+      //   content: "";
+      //   display: inline-block;
+      //   width: 4px;
+      //   height: 4px;
+      //   background-color: hsla(0, 0%, 100%, .4);
+      //   border-radius: 4px;
+      //   position: absolute;
+      //   left: -1px;
+      //   top: 7px;
+      // }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: small;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.no-move {
+  height: 67px;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.back-second-header-menu {
+  height: 67px;
+  background-color: rgba(0, 42, 99, 1);
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+
+  
+ 
+  .second-header-menu {
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 1170px;
+
+    // @media screen and (min-width: 1024px) {
+    //   display: block;
+    //   // position: fixed;
+    //   height: 60px;
+    //   top: 0px;
+    //   right: 0px;
+    //   left: 0px;
+    //   background-color: #002a63;
+    //   z-index: 40;
+    // }
+
+    // Not working scroll
+    // &.second-header-menu-scroll {
+    //   display: block;
+    //   position: sticky;
+    //   height: 60px;
+    //   top: 0px;
+    //   right: 0px;
+    //   left: 0px;
+    //   background-color: red;
+    //   z-index: 40;
+    // }
+
+    li {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      text-align: center;
+
+      .icon-arrow-news {
+        height: 15px;
+        width: 15px;
+      }
+
+      .icon-arrow-inter {
+        height: 15px;
+        width: 15px;
+      }
+
+      .icon-arrow-events {
+        height: 15px;
+        width: 15px;
+      }
+
+      .icon-arrow-jobs {
+        height: 15px;
+        width: 15px;
+      }
+
+      .home-icon {
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: large;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.second-header-scroll {
+  position: fixed;
+  z-index: 40;
+}
+
+.line-wrap {
+  position: relative;
+}
+
+.backLineLeft {
+  background-color: #1cafe5;
+  width: 100vw;
+  height: 8px;
+  position: absolute;
+  bottom: 0px;
+  right: 100%;
+  z-index: 10;
+}
+
+.backLineRight {
+  background-color: #1cafe5;
+  width: 100vw;
+  height: 8px;
+  position: absolute;
+  bottom: -8px;
+  left: -8px;
+  z-index: 31;
+}
+
+.info-bar-news {
+  background-color: #f0f2f2;
+  border-bottom: 4px solid $light-blue;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  padding-top: 8px;
+
+  ul li {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .info-bar-title {
+    font-weight: bold;
+  }
+
+  .info-bar-list {
+    font-weight: normal;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.info-bar-inter {
+  background-color: #f0f2f2;
+  border-bottom: 4px solid $light-blue;
+  height: 388px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  padding-top: 8px;
+
+  .container {
+    .grid {
+      .info-bar-inter-first {
+        color: $black;
+
+        p {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: $black;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .inter-cards {
+        .background-card {
+          background-image: url("/pictures/intro-background.jpg");
+          background-size: cover;
+          height: 154px;
+        }
+
+        .text-card {
+          background-color: $white;
+          height: 60%;
+
+          p {
+            font-weight: bold;
+            color: $black;
+
+            a {
+              text-decoration: none;
+              color: $black;
+            }
+
+            a:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.info-bar-events {
+  background-color: #f0f2f2;
+  border-bottom: 4px solid $light-blue;
+  height: 388px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  padding-top: 8px;
+
+  .container {
+    .grid {
+      .info-bar-events-first {
+        color: $black;
+
+        p {
+          font-weight: bold;
+
+          a {
+            text-decoration: none;
+            color: $black;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .events-cards {
+        .background-card {
+          background-image: url("/pictures/intro-background.jpg");
+          background-size: cover;
+          height: 154px;
+        }
+
+        .text-card {
+          background-color: $white;
+          height: 60%;
+
+          p {
+            font-weight: bold;
+            color: $black;
+
+            &.normal-para {
+              font-weight: normal;
+            }
+
+            a {
+              text-decoration: none;
+              color: $black;
+            }
+
+            a:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.info-bar-jobs {
+  background-color: #f0f2f2;
+  border-bottom: 4px solid $light-blue;
+  height: 388px;
+  display: none;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  padding-top: 8px;
+
+  .container {
+    .grid {
+      .job-cards {
+        .background-card {
+          background-image: url("/pictures/intro-background.jpg");
+          background-size: cover;
+          height: 154px;
+        }
+
+        .text-card {
+          background-color: $white;
+          height: 60%;
+
+          p {
+            font-weight: bold;
+            color: $black;
+
+            &.normal-para {
+              font-weight: normal;
+            }
+
+            a {
+              text-decoration: none;
+              color: $black;
+            }
+
+            a:hover {
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.info-bar {
+  height: 50px;
+  width: 100%;
+  background-color: #f0f2f2;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+  z-index: 10;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 51px;
+  }
+
+  .info-bar-container {
+    max-width: 1200px;
+  }
+
+  ul {
+    width: 100%;
+    padding: 0;
+    list-style-type: disc;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-size: 0.889rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}
